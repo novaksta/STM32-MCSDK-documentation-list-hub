@@ -65,7 +65,7 @@ Firstly it is good to be aware of [**FAQ** section at wiki](https://wiki.st.com/
 
 ### For firmware library details key document is **.chm/.html doxygen** (locally @/Documentation).
 
-- **6-step** related: `TODO clarify what for is each note good`
+- **6-step** related: `TODO clarify what for is each note good/unique`
     - [**UM3259** STM32 motor control SDK - 6-step firmware sensor-less parameter optimization](https://www.st.com/resource/en/user_manual/um3259-stm32-motor-control-sdk--6step-firmware-sensorless-parameter-optimization-stmicroelectronics.pdf)
     - [**UM3042** STM32 motor control SDK - 6-step firmware library](https://www.st.com/resource/en/user_manual/um3042-stm32-motor-control-sdk--6step-firmware-library-stmicroelectronics.pdf)
     - [**UM2916** MCSDK - 6-step firmware examples: insights of the firmware and how to customize it](https://community.st.com/ysqtg83639/attachments/ysqtg83639/mcu-motor-control-forum/946/1/um2916-mcsdk--6step-firmware-examples-insights-of-the-firmware-and-how-to-customize-it-stmicroelectronics.pdf) (_Note: obsolete, replace by **UM3042** (probably); for MCSDK V5_; not available at st.com) 6-step guide, it may be good as an **UM3259** alternative, for understanding the principle.
