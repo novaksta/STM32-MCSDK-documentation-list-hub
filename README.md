@@ -89,8 +89,6 @@ Firstly it is good to be aware of [**FAQ** section at wiki](https://wiki.st.com/
     - **HSO startup guide** (locally  @/Documentation)
 
 - **ZeST** related (provided for selected customers):
-    - in datasheet for Z parts is mentioned PCROP of ZeST
-    - there is a presentation slides about ZeST tuning -- `TODO in 6.4.0 B1 available why? clarify` 
 
 - **ACIM** related:
     - [ACIM article](https://wiki.st.com/stm32mcu/wiki/STM32MotorControl:SDK_AC_induction_motor) @wiki (_Note: for MCSDK V5_)
