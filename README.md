@@ -26,7 +26,7 @@ Secondly, by firmware components/application scope, applications may be divided 
             - **Luenberger** PLL/CORDIC
             - **HSO** (high sensitivity, STM32G4 only)
                 - **ZeST** as **HSO** "extension" for low speed-full torque (by now for selected customers only)
-- **ACIM** (example in v6.4.0, no direct support)
+- **ACIM** (example in v6.4.0 support dropped)
 
 ## Documentation related to MCSDK
 
@@ -41,7 +41,7 @@ Firstly it is good to be aware of [**FAQ** section at wiki](https://wiki.st.com/
     - [STM32 MC Workbench](https://wiki.st.com/stm32mcu/wiki/STM32MotorControl:STM32_MC_Workbench) is description @wiki (similar to **UM3027**).
     - [**UM2380** STM32 motor control SDK v5.4 tools](https://www.st.com/resource/en/user_manual/um2380-stm32-motor-control-sdk-v54-tools-stmicroelectronics.pdf) (_Note: for MCSDK V5_) (locally @/Documentation)
 
-    For getting started: `TODO new board selector`
+    For getting started: 
     - [Getting started SDK 6.0.0](https://wiki.st.com/stm32mcu/wiki/STM32MotorControl:Getting_started_SDK_6.0.0) @wiki (_Note: for old MCSDK V6_)
     - this short [video](https://www.youtube.com/watch?v=iTnj0DT3lBM) may be used as introduction for the workbench (_Note: for older MCSDK V6_)
     - [**UM2374** Getting started with STM32 motor control SDK v5.0](https://www.st.com/resource/en/user_manual/um2374-getting-started-with-stm32-motor-control-sdk-v50-stmicroelectronics.pdf) (_Note: for MCSDK V5_) (locally @/Documentation)
@@ -52,7 +52,7 @@ Firstly it is good to be aware of [**FAQ** section at wiki](https://wiki.st.com/
     - Documentation for the board designer may be found locally @/utilities/pc_software/stmcbd/resource/docs/
     - **AN5166** for MCSDK v5 (locally @/Documentation)
 
-- **Pilot** and **Profiler** related: `TODO custom board offset`
+- **Pilot** and **Profiler** related: 
     - [article about Pilot](https://wiki.stmicroelectronics.cn/stm32mcu/wiki/STM32MotorControl:STM32_MC_Motor_Pilot_-_Start-up_guide) @wiki 
     - [**UM3016**  How to use STM32 motor control SDK v6.0 profiler](https://www.st.com/resource/en/user_manual/um3016-how-to-use-stm32-motor-control-sdsk-v60-profiler-stmicroelectronics.pdf) Basic guide for the profiler (_Note: For older MCSDK v6 version_)
     - [STM32 MC Motor Profiler](https://wiki.st.com/stm32mcu/wiki/STM32MotorControl:STM32_MC_Motor_Profiler) @wiki (Note: for old MCSDK)
@@ -65,13 +65,13 @@ Firstly it is good to be aware of [**FAQ** section at wiki](https://wiki.st.com/
 
 ### For firmware library details key document is **.chm/.html doxygen** (locally @/Documentation).
 
-- **6-step** related: `TODO clarify what for is each note good/unique`
-    - [**UM3259** STM32 motor control SDK - 6-step firmware sensor-less parameter optimization](https://www.st.com/resource/en/user_manual/um3259-stm32-motor-control-sdk--6step-firmware-sensorless-parameter-optimization-stmicroelectronics.pdf)
-    - [**UM3042** STM32 motor control SDK - 6-step firmware library](https://www.st.com/resource/en/user_manual/um3042-stm32-motor-control-sdk--6step-firmware-library-stmicroelectronics.pdf)
-    - [**UM2916** MCSDK - 6-step firmware examples: insights of the firmware and how to customize it](https://community.st.com/ysqtg83639/attachments/ysqtg83639/mcu-motor-control-forum/946/1/um2916-mcsdk--6step-firmware-examples-insights-of-the-firmware-and-how-to-customize-it-stmicroelectronics.pdf) (_Note: obsolete, replace by **UM3042** (probably); for MCSDK V5_; not available at st.com) 6-step guide, it may be good as an **UM3259** alternative, for understanding the principle.
-    - [6-step Firmware Algorithm](https://wiki.st.com/stm32mcu/wiki/STM32MotorControl:6-step_Firmware_Algorithm) @wiki
-    - [6-step - Optimization and troubleshooting of sensor-less firmware parameters](https://wiki.st.com/stm32mcu/wiki/STM32MotorControl:6-step_-_Optimization_and_troubleshooting_of_sensor-less_firmware_parameters) @wiki
-    - [https://wiki.st.com/stm32mcu/wiki/STM32MotorControl:6-step_Firmware_Examples_User_Manual](https://wiki.st.com/stm32mcu/wiki/STM32MotorControl:6-step_Firmware_Examples_User_Manual) @wiki (_Note: probably outdated_)
+- **6-step** related (the same content in manuals and its related wiki articles):
+    - [**UM3042** STM32 motor control SDK - 6-step firmware library](https://www.st.com/resource/en/user_manual/um3042-stm32-motor-control-sdk--6step-firmware-library-stmicroelectronics.pdf) introduction to the algorithm and program structure
+        - [6-step Firmware Algorithm](https://wiki.st.com/stm32mcu/wiki/STM32MotorControl:6-step_Firmware_Algorithm) @wiki
+    - [**UM3259** STM32 motor control SDK - 6-step firmware sensor-less parameter optimization](https://www.st.com/resource/en/user_manual/um3259-stm32-motor-control-sdk--6step-firmware-sensorless-parameter-optimization-stmicroelectronics.pdf) tuning guide
+        - [6-step - Optimization and troubleshooting of sensor-less firmware parameters](https://wiki.st.com/stm32mcu/wiki/STM32MotorControl:6-step_-_Optimization_and_troubleshooting_of_sensor-less_firmware_parameters) @wiki
+    - [**UM2916** MCSDK - 6-step firmware examples: insights of the firmware and how to customize it](https://community.st.com/ysqtg83639/attachments/ysqtg83639/mcu-motor-control-forum/946/1/um2916-mcsdk--6step-firmware-examples-insights-of-the-firmware-and-how-to-customize-it-stmicroelectronics.pdf) introduction to 6-step, certain parameters listed (_Note: obsolete, replaced by **UM3042** (mostly); for MCSDK V5_; not available directly at st.com) 6-step guide
+        - [6-step_Firmware_Examples_User_Manual](https://wiki.st.com/stm32mcu/wiki/STM32MotorControl:6-step_Firmware_Examples_User_Manual) @wiki 
 
 - **Position control** (_Note: sensored position needed!_):
     - [**AN5464** Position control of a three-phase permanent magnet motor
@@ -84,6 +84,7 @@ Firstly it is good to be aware of [**FAQ** section at wiki](https://wiki.st.com/
     Advanced optional features:
     - [Discontinuous PWM](https://wiki.st.com/stm32mcu/wiki/STM32MotorControl:SDK_discontinuous_PWM) @wiki (_Note: for MCSDK V5_)
     - [Overmodulation](https://wiki.st.com/stm32mcu/wiki/STM32MotorControl:SDK_Overmodulation) @wiki (_Note: for MCSDK V5_)
+    - [Single Shunt Phase Shift](https://wiki.st.com/stm32mcu/wiki/STM32MotorControl:Single_Shunt_Phase_Shift) @wiki (_Note: doc for MCSDK V5, featured in V6 by default_)
 
 - **HSO** related:
     - **HSO startup guide** (locally  @/Documentation)
@@ -93,5 +94,3 @@ Firstly it is good to be aware of [**FAQ** section at wiki](https://wiki.st.com/
 - **ACIM** related:
     - [ACIM article](https://wiki.st.com/stm32mcu/wiki/STM32MotorControl:SDK_AC_induction_motor) @wiki (_Note: for MCSDK V5_)
 
-- **Y-tricks** `TODO clarify what is applied in current version` (_Note: for MCSDK V5_) @wiki
-    - [Single Shunt Phase Shift](https://wiki.st.com/stm32mcu/wiki/STM32MotorControl:Single_Shunt_Phase_Shift)
