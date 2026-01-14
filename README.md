@@ -93,4 +93,5 @@ Firstly it is good to be aware of [**FAQ** section at wiki](https://wiki.st.com/
 
 - **ACIM** related:
     - [ACIM article](https://wiki.st.com/stm32mcu/wiki/STM32MotorControl:SDK_AC_induction_motor) @wiki (_Note: for MCSDK V5_)
-
+---
+In Docs dir are v4.3 version docs (most useful UM1052), in Documentations dir v5.Y docs.
